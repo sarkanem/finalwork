@@ -46,7 +46,7 @@
         </div>
         <div class="col-sm">
             <div class="card">
-                <img class="card-img-top" src="images/article1.jpg" alt="Henri article">
+            <iframe width="100%" height="265px" src="https://www.youtube.com/embed/wx5Of3X-VJw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="card-body">
                     <h5 class="card-title"><a href="/finalwork/?page=articles">Oh, revoir, Henri!</a></h5>
                     <p class="card-text">Henri thanks all of his fans/worshippers for all their support. He looks

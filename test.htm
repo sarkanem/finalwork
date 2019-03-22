@@ -1,33 +1,57 @@
-<nav aria-label="breadcrumb" class="mt-5">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/finalwork/">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About us</li>
-    </ol>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container-fluid">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Purrfect</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/finalwork/style.css" type="text/css" rel="stylesheet" />
+    <link rel='icon' type='image/png' href='/finalwork/images/favicon.png' />
+</head>
 
-    <h1>About Henri</h1>
+<body>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="/finalwork/"><img src="/finalwork/images/logo.png" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link <?= !isset($_GET['page']) ? ' active' : ''; ?>" href="/finalwork/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $_GET['page'] == 'articles' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=articles">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $_GET['page'] == 'chat' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=chat">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $_GET['page'] == 'form' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=form">Register</a>
+                </li>
 
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-            <h4>HOME</h4>
-            <p>Some content.</p>
+                <?php  if (isset($_SESSIONS['user_id'])) { ?>
+                <a class="nav-link <?= $_GET['page'] == 'about' ? ' active' : ''; ?>"
+                    href="/finalwork/?page=logout">Logout</a>
+                <?php } else { ?>
+
+                <li class="nav-item">
+                    <a class="nav-link <?= $_GET['page'] == 'about' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $_GET['page'] == 'about' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=login">Log in</a>
+                </li>
+                <?php } ?>
+            </ul>
         </div>
-        <div id="menu1" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Some content in menu 1.</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Some content in menu 2.</p>
-        </div>
-    </div>
-
-</div>
+    </nav>

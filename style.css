@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+    margin-bottom: 60px;
+}
+
+#henri {
+    font-size: 6em;
+    text-align: center;
+}
+
+h3 {
+    padding: 20px 0px 20px 0px;
+}
+
+/* navbar customization*/
+.navbar
+{
+    border-bottom: 3px solid darkslategrey;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(24, 22, 22);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d66a6a;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: red;
+}
+
+/* breadcrumbs customization*/
+.breadcrumb-item {
+    font-size: 14px;
+}
+.breadcrumb-item a{
+    color: rgb(134, 133, 133);   
+}
+
+.breadcrumb-item.active {
+    color: rgb(185, 185, 185); 
+}
+
+.breadcrumb {
+    padding: .4rem 0.4rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgb(185, 185, 185); 
+    content: "//";
+}
+
+/* so that content is below navbar and breadcrumbs*/
+.mt-5 {
+    margin-top: 4.7rem!important;
+}
+
+/* setting the size of the logo */
+.logo {
+    height: 45px;
+} /* source: https://svgsilh.com/image/1484725.html */
+

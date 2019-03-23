@@ -19,25 +19,25 @@ unset($_SESSION['errors']);
 
 <div class="container-fluid">
 
-    <h3>REGISTER FOR MORE CONTENT</h3>
+    <h3>REGISTER FOR MORE PRO-CAT-STINATION</h3>
     <form action="/finalwork/registration.php" method="POST">
         <div class="form-group">
-            <input type="text" name="username" placeholder="username*">
+            <input type="text" name="username" placeholder="username*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="password" placeholder="password*">
+            <input type="text" name="password" placeholder="password*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="passwordRetype" placeholder="retype password*">
+            <input type="text" name="passwordRetype" placeholder="retype password*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="email" placeholder="e-mail*">
+            <input type="text" name="email" placeholder="e-mail*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="firstName" placeholder="first name*">
+            <input type="text" name="firstName" placeholder="first name*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="lastName" placeholder="last name">
+            <input type="text" name="lastName" placeholder="last name*" required>
         </div class="form-group">
         <div class="form-group">
             <label for="country">Country</label>

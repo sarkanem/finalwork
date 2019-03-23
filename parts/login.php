@@ -5,15 +5,21 @@
     </ol>
 </nav>
 
+<div class="container-fluid">
+
+<div><h3>WHAT'S YOUR PURRSONALITY?</h3></div>
+
 <form action="/finalwork/login-action.php" method="POST">
 
     <div class="form-group">
-        <input type="text" name="email" placeholder="e-mail">
+        <input type="text" name="email" placeholder="e-mail" required>
     </div>
     <div class="form-group">
-        <input type="text" name="password" placeholder="password">
+        <input type="text" name="password" placeholder="password" required>
     </div>
 
-    <input type="submit" value="Sign in">
+    <input type="submit" value="Cat-in">
 
 </form>
+
+</div>

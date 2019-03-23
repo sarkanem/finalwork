@@ -21,7 +21,7 @@ a:hover {
     color: #993838;
    }
 
-/* navbar customization*/
+/* navbar customization */
 .navbar
 {
     border-bottom: 3px solid darkslategrey;
@@ -39,7 +39,7 @@ a:hover {
     color: red;
 }
 
-/* breadcrumbs customization*/
+/* breadcrumbs customization */
 .breadcrumb-item {
     font-size: 14px;
 }
@@ -63,7 +63,7 @@ a:hover {
     content: "//";
 }
 
-/* so that content is below navbar and breadcrumbs*/
+/* so that all content is below navbar and breadcrumbs*/
 .mt-5 {
     margin-top: 4.7rem!important;
 }
@@ -73,8 +73,7 @@ a:hover {
     height: 45px;
 } /* source: https://svgsilh.com/image/1484725.html */
 
-/* styling tabs on About page */
-
+/* styling tabs on the About page */
 .nav-tabs .nav-link {
     border: 1px solid white;
 }
@@ -82,3 +81,28 @@ a:hover {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: red;
 }
+
+.tab-content>.active{
+    margin: 10px 10px 10px 10px;
+}
+    
+.row.tab {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+div .profile-info{
+    font-weight: bold;
+}
+
+/* so that cards on the main page are equal size regardless of content */
+.card-body{
+    min-height: 150px;
+}
+
+/* map container */
+#map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+  }

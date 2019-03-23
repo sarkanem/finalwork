@@ -4,8 +4,8 @@ include 'db.php';
 
 include 'parts/header.php';
 
-    if (isset($_GET['page']) && $_GET['page'] == 'articles'){
-        include 'parts/articles.php';
+    if (isset($_GET['page']) && $_GET['page'] == 'episodes'){
+        include 'parts/episodes.php';
     } elseif (isset($_GET['page']) && $_GET['page'] == 'chat'){
         include 'parts/chat.php';
     } elseif (isset($_GET['page']) && $_GET['page'] == 'form'){

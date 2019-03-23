@@ -25,10 +25,10 @@ unset($_SESSION['errors']);
             <input type="text" name="username" placeholder="username*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="password" placeholder="password*" required>
+            <input type="password" name="password" placeholder="password*" required>
         </div>
         <div class="form-group">
-            <input type="text" name="passwordRetype" placeholder="retype password*" required>
+            <input type="password" name="passwordRetype" placeholder="retype password*" required>
         </div>
         <div class="form-group">
             <input type="text" name="email" placeholder="e-mail*" required>

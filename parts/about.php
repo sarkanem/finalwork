@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="playlist" role="tabpanel" aria-labelledby="playlist-tab">
-                    <iframe width="50%" height="400px" src="https://www.youtube.com/embed/0M7ibPk37_U" frameborder="0"
+                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/0M7ibPk37_U" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -83,10 +83,10 @@
         </div>
 
         <div class="col-sm">
-            <div>Youtube channel: <a href="https://www.youtube.com/user/HenriLeChatNoir">
-                    https://www.youtube.com/user/HenriLeChatNoir</a></div>
-            <div>Facebook: <a
-                    href="https://www.facebook.com/henrilechatnoir/">https://www.facebook.com/henrilechatnoir/</a></div>
+            <div><h5>Youtube channel: <a href="https://www.youtube.com/user/HenriLeChatNoir">
+                    https://www.youtube.com/user/HenriLeChatNoir</a></h5></div>
+            <div><h5>Facebook: <a
+                    href="https://www.facebook.com/henrilechatnoir/">https://www.facebook.com/henrilechatnoir/</a></h5></div>
         </div>
     </div>
 

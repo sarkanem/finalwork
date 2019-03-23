@@ -15,7 +15,7 @@
         <input type="text" name="email" placeholder="e-mail" required>
     </div>
     <div class="form-group">
-        <input type="text" name="password" placeholder="password" required>
+        <input type="password" name="password" placeholder="password" required>
     </div>
 
     <input type="submit" value="Cat-in">

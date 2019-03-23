@@ -26,8 +26,8 @@
                     <a class="nav-link <?= !isset($_GET['page']) ? ' active' : ''; ?>" href="/finalwork/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $_GET['page'] == 'articles' ? ' active' : ''; ?>"
-                        href="/finalwork/?page=articles">Articles</a>
+                    <a class="nav-link <?= $_GET['page'] == 'episodes' ? ' active' : ''; ?>"
+                        href="/finalwork/?page=episodes">Episodes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= $_GET['page'] == 'chat' ? ' active' : ''; ?>"

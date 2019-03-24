@@ -5,6 +5,7 @@ $email = $_POST['email']; // has to match the form
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $password = $_POST['password'];
+$passwordRetype = $_POST['passwordRetype'];
 
 $errors = [];
 
@@ -21,6 +22,18 @@ if (!$lastName) {
 if (!$password) {
     $errors[] = 'Password is not provided';
 }
+if ($passwordRetype != $password){
+    $errors[] = 'Passwords do not match';
+}
+if (strlen($password) < 8){
+    $errors[] = 'Password must be at least 8 characters long';
+}
+if (!preg_match('~[0-9]+~', $password)){
+    $errors[] = 'Password must contain at least one number';
+}
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'Email is not a valid email address';
+} 
 
 // check if email is not taken
 

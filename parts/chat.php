@@ -10,8 +10,10 @@
     
     <div id="chatWindow" class="pre-scrollable">
       
-        <p><span class="user">Henri:<br></span>Thank you for the awesome work!</p>
+        <p><span class="user">Henri:<br></span>Thank you for your work!</p>
     </div>
+    
+    <div class="chatsubmission"></div>
 
     <div>
         <form>
@@ -19,13 +21,12 @@
                 <input type="text" id="chatName" name="chatname" placeholder="chat name" required>
             </div>
             <div class="form-group">
-                <label for="chatMessage">Your comment:</label>
-                <textarea class="form-control" id="chatMessage" rows="3"></textarea>
+                <label for="chatMessage">Your message:</label>
+                <textarea class="form-control" id="chatMessage" name="chatMessage" rows="3" required></textarea>
                 <small id="notice" class="form-text text-muted">Meow, purr or shriek, but please mind your
                     language!</small>
             </div>
-            <button type="button" id="button" class="btn btn-secondary">Meow</button>
+            <button type="submit" id="button" class="btn btn-secondary">Meow</button>
         </form>
     </div>
-
 </div>

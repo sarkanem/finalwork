@@ -7,6 +7,19 @@
 
 <div class="container-fluid">
 
+<?php if (isset($_SESSION['errors'])) { ?>
+<div class="alert alert-danger">
+    <ul>
+        <?php foreach($_SESSION['errors'] as $error) { ?>
+        <li><?= $error; ?></li>
+        <?php } ?>
+    </ul>
+</div>
+<?php 
+unset($_SESSION['errors']);
+} ?>
+
+
 <div><h3>WHAT'S YOUR PURRSONALITY?</h3></div>
 
 <form action="/finalwork/login-action.php" method="POST">

@@ -86,7 +86,9 @@ $('.btn').click(function(){
     var d = new Date();
     var strDate =  d.getDate() + "." +  (d.getMonth()+1) + "." + d.getFullYear() + ".    " + addZero(d.getHours()) + ":" + addZero(d.getMinutes());
 
-     $('#chatWindow').html(content + '<p> <span class="user">' + username + ':</span>   ' + strDate + '<br>' + message + '</p>');
-     $('#chatMessage').val(''); 
-     $('#chatName').val(''); 
+    if(username != "" && message != ""){
+        $('#chatWindow').html(content + '<p> <span class="user">' + username + ':</span>   ' + strDate + '<br>' + message + '</p>');
+        $('#chatMessage').val(''); 
+        $('#chatName').val(''); 
+    }
 });

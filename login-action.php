@@ -28,5 +28,7 @@ if ($id){
     header('Location: /finalwork');
 } else {
     //user not found
-    header('Location: /finalwork/?page=login&error=true');
+    $errors[] = 'User is not registered';
+    $_SESSION['errors'] = $errors;
+    header('Location: /finalwork/?page=login&errors=true');
 }

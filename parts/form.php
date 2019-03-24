@@ -25,10 +25,10 @@ unset($_SESSION['errors']);
             <input type="text" name="username" placeholder="username*" required>
         </div>
         <div class="form-group">
-            <input type="password" name="password" placeholder="password*" required>
+            <input type="password" id="pw1" name="password" placeholder="password*" required>
         </div>
         <div class="form-group">
-            <input type="password" name="passwordRetype" placeholder="retype password*" required>
+            <input type="password" id="pw2" name="passwordRetype" placeholder="retype password*" required>
         </div>
         <div class="form-group">
             <input type="text" name="email" placeholder="e-mail*" required>
@@ -40,9 +40,10 @@ unset($_SESSION['errors']);
             <input type="text" name="lastName" placeholder="last name*" required>
         </div class="form-group">
         <div class="form-group">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="1" selected>Latvia</option>
+            <label for="country">Country*</label>
+            <select name="country" id="country" required>
+                <option value="" selected></option>
+                <option value="1">Latvia</option>
                 <option value="2">Lithuania</option>
                 <option value="3">Estonia</option>
                 <option value="4">Canada</option>
@@ -53,5 +54,5 @@ unset($_SESSION['errors']);
         <div class="form-group">
             <input type="checkbox"> I agree with terms and conditions*
         </div>
-        <input type="submit" value="Register">
+        <input type="submit" value="Register" id="btn-reg">
     </form>

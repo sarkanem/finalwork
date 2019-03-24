@@ -8,6 +8,7 @@
     <title>HENRI-LE-CHAT-NOIR</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="/finalwork/style.css" type="text/css" rel="stylesheet" />
     <link rel='icon' type='image/png' href='/finalwork/images/favicon.png' />
 </head>
@@ -26,8 +27,8 @@
                     <a class="nav-link <?= !isset($_GET['page']) ? ' active' : ''; ?>" href="/finalwork/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $_GET['page'] == 'episodes' ? ' active' : ''; ?>"
-                        href="/finalwork/?page=episodes">Episodes</a>
+                    <a class="nav-link <?= $_GET['page'] == 'episodelist' ? ' active' : '', $_GET['page'] == 'episode' ? ' active' : '';?>"
+                        href="/finalwork/?page=episodelist">Episodes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= $_GET['page'] == 'chat' ? ' active' : ''; ?>"

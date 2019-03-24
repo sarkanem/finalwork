@@ -4,9 +4,11 @@ include 'db.php';
 
 include 'parts/header.php';
 
-    if (isset($_GET['page']) && $_GET['page'] == 'episodes'){
-        include 'parts/episodes.php';
-    } elseif (isset($_GET['page']) && $_GET['page'] == 'chat'){
+    if (isset($_GET['page']) && $_GET['page'] == 'episodelist'){
+        include 'parts/episodelist.php';
+    } elseif (isset($_GET['page']) && $_GET['page'] == 'episode'){
+        include 'parts/episode.php';
+    }elseif (isset($_GET['page']) && $_GET['page'] == 'chat'){
         include 'parts/chat.php';
     } elseif (isset($_GET['page']) && $_GET['page'] == 'form'){
         include 'parts/form.php';

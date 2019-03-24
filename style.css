@@ -172,3 +172,24 @@ a.page-link.active {
 #chatMessage #button{
     display:inline-block;
 }
+
+
+/*customizing episode gallery*/
+a[data-fancybox^="gallery"] img {
+    width: 285px;
+    height: 200px;
+    margin: 5px;
+}
+
+#episodeblock{
+    text-align: justify;
+}
+
+#galleryblock{
+    align-content: center;
+}
+
+#largeitem img{
+    width: 580px;
+    height: 300px;
+}

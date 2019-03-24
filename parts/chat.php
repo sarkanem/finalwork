@@ -7,16 +7,16 @@
 
 <div class="container-fluid">
     <h1>Le chat room</h1>
-
+    
     <div id="chatWindow" class="pre-scrollable">
       
         <p><span class="user">Henri:<br></span>Thank you for the awesome work!</p>
     </div>
 
-    <div id="chatSubmission">
+    <div>
         <form>
             <div class="form-group">
-                <input type="text" id="chatName" name="chatname" placeholder="username" required>
+                <input type="text" id="chatName" name="chatname" placeholder="chat name" required>
             </div>
             <div class="form-group">
                 <label for="chatMessage">Your comment:</label>

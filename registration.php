@@ -41,6 +41,7 @@ if (count($errors) > 0)
     // form is not valid
     $_SESSION['errors'] = $errors;
     header('Location: /finalwork/?page=form&errors=true');
+   
 } else {
     //register the user
     $sqlinsert = $db->prepare("INSERT INTO users SET email = ?, first_name = ?, last_name = ?, password = ?");
